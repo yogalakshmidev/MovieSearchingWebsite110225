@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import { MovieDetails, MovieList, PageNotFound, Search } from "../pages";
+import { MovieType } from "../pages/MovieType";
 
 const AllRoutes = () => {
   return (
@@ -9,7 +10,7 @@ const AllRoutes = () => {
         <Route
           path="/"
           element={
-            <MovieList title="Your Guide to Great Movies" apiPath="movie" />
+            <MovieType title="Your Guide to Great Movies" apiPath="movie" />
           }
         />
 
